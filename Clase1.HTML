@@ -2,6 +2,61 @@
 <html lang="en">
 
 <head>
+  <style>
+    ul.menu1 {
+    list-style-type: none;
+    margin: 16px ; 
+    padding: 16x ;
+    overflow: hidden;
+    background-color: #bbafaf;
+    
+  }
+  li.l{
+    float: left;
+
+  }
+
+li.l a.lim {
+  display: block;
+  color: rgb(47, 18, 209);
+  text-align:center;
+  padding: 16px; 
+  text-decoration: none;
+  
+}
+
+li.l a.lim:hover {
+  background-color: #474545;
+}
+  ul.menu {
+    list-style-type: none;
+    margin: 0px ; 
+    padding: 30px ;
+    overflow: hidden;
+    background-color: #3f3c3c;
+    border-radius: 20px;
+  }
+
+  li.li{
+    float: center;
+  }
+
+li.li a.lia {
+  display: block;
+  color: rgb(209, 18, 136);
+  text-align:right;
+  margin: 0px;;
+  padding: 16px ; 
+  text-decoration: none;
+  
+}
+
+li.li a.lia:hover {
+  background-color: #dd4e4e;
+  
+}
+
+</style>
   <title>Title</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -233,6 +288,56 @@ border: 1px solid black;
 </tfoot>
 </table>
 
+
+<h1>Listas</h1>
+
+
+<ul> 
+
+  <li>Listas</li>
+  <li>Desordenadas</li>
+  <li>1</li>
+  <li>3</li>
+  <li>6</li>
+</ul>
+
+<ol>
+  <li>Listas</li>
+  <li>Ordenadas</li>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+
+  <dl>
+    <dt>Listas</dt>
+    <dd>Las listas son conjuntos ordenados de elementos</dd>
+    <dt>De</dt>
+    <dd>Indica la persona o cosa que tiene una determinada cualidad.</dd>
+    <dt>Descripción</dt>
+    <dd>Discurso oral o escrito en el que se explica c&oacute;mo es una cosa, una persona o un lugar para ofrecer una imagen o una idea completa de ellos.</dd>
+  </dl>
+  
+<h1>Listas con enlace para menú</h1>
+<ul class="menu1">
+
+  <li class="l"><a class="lim" href="#home">Inicio</a></li>
+  <li class="l"><a class="lim" href="#noticias">Noticias</a></li>
+  <li class="l"><a class="lim" href="#contacto">Contacto</a></li>
+  <li class="l"><a class="lim" href="#acerca">Acerca de</a></li>
+ 
+
+</ul>
+<ul class="menu">
+
+<li class="li"><a class="lia" href="#home">Tecnología desarrollo de Software</a></li>
+<li class="li"><a class="lia" href="#noticias">Tecnología Saneamiento Ambiental</a></li>
+<li class="li"><a class="lia" href="#contacto">Tecnología Gestion Empresarial</a></li>
+<li class="li"><a class="lia" href="#acerca">Tecnología Gestion Contable</a></li>
+<li class="li"><a class="lia" href="#acerca">Tecnología Gestion Agroindustrial </a></li>
+
+</ul>
+
+</ol>
 </body>
 
 </html>
