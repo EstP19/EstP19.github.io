@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="icon" href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/61c280f0-6c35-4f2b-9ffb-f2a71f1c651e/db5b288-ad520cf7-1c70-4457-9bef-78483ecc0795.png/v1/fill/w_200,h_200/snoopy_icon_by_bradsnoopy97_db5b288-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjAwIiwicGF0aCI6IlwvZlwvNjFjMjgwZjAtNmMzNS00ZjJiLTlmZmItZjJhNzFmMWM2NTFlXC9kYjViMjg4LWFkNTIwY2Y3LTFjNzAtNDQ1Ny05YmVmLTc4NDgzZWNjMDc5NS5wbmciLCJ3aWR0aCI6Ijw9MjAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.S4ihl30-excVkCtgPSBmJ_t3JLXnheUMm2daSvgPjAg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="Point1.Css">
+    <title>Taller</title>
+   
+  </head>
+  <body>
+    
+  
+<div class="sidebar">
+    <nav >
+      <ul>
+      <li><a href="#1" onclick="l1()">1. Contador de Palabras Únicas</a></li>
+      <li><a href="#2"onclick="l2()">2. Validación De Contraseña</a></li>
+      <li><a href="#3"onclick="l3()">3. Anagramas</a></li>
+      <li><a href="#4"onclick="l4()">4. Reemplazo de Caracteres</a></li>
+      <li><a href="#5"onclick="l5()">5. Buscar en una Cadena</a></li>
+      <li><a href="#6"onclick="l6()">6. Contador de Palabras</a></li>
+      <li><a href="#7"onclick="l7()">7. Inversión de Cadena</a></li>
+      <li><a href="#8"onclick="l8()">8. Cadenas y Arrays</a></li>
+      <li><a href="#9"onclick="l9()">9. Mayúsculas y Minúsculas</a></li>
+      <li><a href="#10"onclick="l10()">10. Longitud de Palabras</a></li>
+      <li><a href="#11"onclick="l11()">11. Duplicar Elementos en un Array</a></li>
+      <li><a href="#12"onclick="l12()">12. Mayúsculas a Minúsculas y Viceversa</a></li>
+
+    </ul>
+    </nav>
+  </div>
+
+ <div class="content">
+  <div class="h1">
+    <h1>Taller Programacion Orientada A Objetos <br />
+      <h6>Yesi Esteban Pantoja Cuellar</h6></h1></div>
+
+<div class="row" id="res"></div>
+
+    <div class="row" >
+  
+<h4>1. Contador de Palabras Únicas</h4>
+<br></br> 
+<h5>Cree un programa que solicite al usuario ingresar un párrafo y luego cuente cuántas palabras únicas hay en ese párrafo</h5>
+
+<input type="text" class="" placeholder="Ingrese El Párrafo" id="Pr"></input><br>
+
+<button type="button" onclick="Enviar1()" class="btn btn-dark ">Enviar</button>
+    
+<div id="res1"></div>
+    
+</div>
+
+<br></br>
+
+ <div class="row" >
+<h4>2. Validación De Contraseña</h4>
+<br></br> 
+<h5>Cree un programa que solicite al usuario crear una contraseña</h5>
+    
+<input type="password" class="" placeholder="Crear Contraseña" id="Cont"><br>
+    
+<button type="button" onclick="Enviar2()" class="btn btn-dark ">Enviar</button>
+
+ <div id="res2"></div>
+ </div>
+
+<br></br>
+
+<div class="row" >
+ <h4>3. Anagramas</h4>
+<br></br> 
+<h5>Cree un programa que determine si dos cadenas ingresadas por el usuario son anagramas entre sí</h5>
+        
+<input type="text" class="" placeholder="Primer Palabra" id="Pal1"><br>
+<input type="text" class="" placeholder="Primer Palabra" id="Pal2"><br>
+        
+<button type="button" onclick="Enviar3()" class="btn btn-dark ">Enviar</button>
+    
+ <div id="res3"></div>
+</div>
+
+<br></br>
+ <div class="row" >
+<h4>4. Reemplazo de Caracteres</h4>
+ <br></br> 
+ <h5>Cree un programa que reemplace todas las vocales en una cadena con un carácter específico</h5>
+            
+<input type="text" class="" placeholder="Ingresar Palabra" id="Ing"><br>
+               
+<button type="button" onclick="Enviar4()" class="btn btn-dark ">Enviar</button>
+        
+<div id="res4"></div>
+</div>
+            
+<br></br>
+
+<div class="row" >
+<h4>5. Buscar en una Cadena</h4>
+<br></br> 
+<h5>Cree un programa que pida al usuario una cadena de texto y una palabra clave</h5>
+        
+<input type="text" class="" placeholder="Parrafo" id="Parr"><br>
+<input type="text" class="" placeholder="Palabra Clave" id="PalC"><br>
+        
+<button type="button" onclick="Enviar5()" class="btn btn-dark ">Enviar</button>
+    
+<div id="res5"></div>
+</div> 
+                
+<br></br>
+
+<div class="row" >
+<h4>6. Contador de Palabras </h4>
+<br></br> 
+ <h5>Cree un programa que solicite al usuario ingresar un párrafo y luego cuente cuántas palabras hay en ese párrafo</h5>
+                
+<input type="text" class="" placeholder="Ingrese El Párrafo" id="Par"><br>
+                
+<button type="button" onclick="Enviar6()" class="btn btn-dark ">Enviar</button>
+                    
+<div id="res6"></div>
+                    
+</div>
+                
+ <br></br>
+<div class="row" >
+<h4>7. Inversión de Cadena </h4>
+      <br></br> 
+<h5>Cree una función que invierta una cadena de texto dada.</h5>
+                      
+<input type="text" class="" placeholder="Ingrese El Párrafo" id="Ic"><br>
+                      
+<button type="button" onclick="Enviar7()" class="btn btn-dark ">Enviar</button>
+                          
+<div id="res7"></div>
+                          
+</div>
+                      
+<br></br>
+<div class="row" >     
+<h4>8. Cadenas y Arrays </h4>
+      <br></br> 
+<h5>Cree un array de cadenas que contenga nombres de frutas y que el usuario escriba una fruta para corrobar si esta está. </h5>
+                      
+<input type="text" class="" placeholder="Ingrese Una Fruta" id="CA"><br>
+                      
+<button type="button" onclick="Enviar8()" class="btn btn-dark ">Enviar</button>
+                          
+<div id="res8"></div>
+                          
+</div>
+                      
+<br></br>        
+            
+<div class="row" >     
+  <h4>9. Mayúsculas y Minúsculas </h4>
+        <br></br> 
+  <h5>Pida al usuario que ingrese una cadena y luego muestre la misma cadena con todas las letras en mayúsculas y todas las letras en minúsculas. </h5>
+                        
+  <input type="text" class="" placeholder="Ingrese Un Párrafo" id="Mm"><br>
+                        
+  <button type="button" onclick="Enviar9()" class="btn btn-dark ">Mayúsculas</button>
+  <button type="button" onclick="Enviar10()" class="btn btn-dark ">Minúsculas</button>
+                        
+  <div id="res9"></div>
+                            
+  </div>
+  <br></br>
+
+  <div class="row" >
+    <h4>10. Longitud de Palabras</h4>
+<br></br>
+    <h5>Cree un programa que tome una oración ingresada por el usuario y muestre la longitud de cada palabra en esa oración.</h5>  <br></br>
+    <input type="text" class="" id="Oracion" placeholder="Ingresa una oración" wfd-id="id0">
+    <button type="button" class="btn btn-dark " onclick="mostrarLongitudes()">Mostrar Longitudes</button>
+    <br></br>
+    <table>
+      <thead>
+          <tr>
+              <th>Palabra</th>
+              <th>Longitud</th>
+          </tr>
+      </thead>
+      <tbody id="tablaR">
+      </tbody>
+  </table>
+</div>                     
+  <br></br> 
+
+  <div class="row" >
+    <h4>11. Duplicar Elementos en un Array</h4>
+    <br></br> 
+    <h5> Cree un programa que tome un array de números enteros y utilice la función map para duplicar cada elemento en el array. </h5>
+    <input type="number" id="N" placeholder="Número">
+    <button type="button" class="btn btn-dark " onclick="agregarNumero()">Agregar</button>
+
+    <p>Array original:</p>
+    <ul id="arrayOriginal"></ul>
+
+    <button type="button" class="btn btn-dark " onclick="duplicarElementos()">Duplicar</button>
+
+    <p>Array duplicado:</p>
+    <ul id="arrayDuplicado"></ul>
+</div> 
+<div class="row" >
+  <h4>12. Mayúsculas a Minúsculas y Viceversa</h4>
+
+  <p>Cree un programa que tome una lista de palabras en un array y utilice la función map para convertir todas las letras en mayúsculas a minúsculas y viceversa en cada palabra.(ingrese cada palabra separada por una coma (,)) </p>
+  <input type="text" id="Palabras" placeholder="Palabras">
+  <button type="button" class="btn btn-dark " onclick="modificarPalabras()">Modificar</button>
+
+  <p>Palabras modificadas:</p>
+  <ul id="listaModificada"></ul>
+</div>
+</div>
+  
+
+
+
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="Point1.js"></script>
+    
+  </body>
+</html>
