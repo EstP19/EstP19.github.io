@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Show Food Image</title>
+  <style>
+    #app {
+      border: dashed black 1px;
+      width: 330px;
+      padding: 20px;
+      height: 250px;
+    }
+
+    #app > img {
+      float: right;
+      width: 55%;
+    }
+
+    ul:hover {
+      cursor: pointer;
+      background-color: rgb(224, 224, 224);
+    }
+
+    #app > ol {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    #app ul {
+      padding-left: 6px;
+      border-radius: 5px;
+      width: 70px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Entregado por:</h1>
+
+<p>Yesi Esteban Pantoja Cuellar</p>
+<p>Javier Nicolas Salas Liñeiro</p>
+
+<div id="app">
+    <img v-bind:src="imgUrl" v-on:click="imgUrl = ''">
+    <ol>
+      <ul v-for="food in manyFoods" v-on:click="imgUrl = food.url">
+        {{ food.name }}
+      </ul>
+      <button v-on:click="removeFood(index)">Eliminar</button>
+      <button v-on:click="recoverFood(index)">Recuperar</button>
+    </li>
+  </ol>
+</div>
+      <br><br> 
+
+  
+    </ol>
+  </div>
+  
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+    const app = Vue.createApp({
+      data() {
+        return {
+          imgUrl: 'https://i.chzbgr.com/thumb800/21121541/h0725F91A/food-fruit-coconut-coconuts-memes-funny-funny-memes-food-memes-random-memes',
+          manyFoods: [
+            {name: 'Pera', url: 'https://scontent.fpso2-1.fna.fbcdn.net/v/t1.6435-9/164575387_2890636581210085_3618630022068046574_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=dd63ad&_nc_eui2=AeFqGDrjnGNx3l6dPIet4UihnnbxBIKtfSSedvEEgq19JCZVTl_gBBhvOv5iptVRRkDGkak6qGJViFOP5nNCTH7J&_nc_ohc=4G2IS1NOFdkAX-UnzBv&_nc_ht=scontent.fpso2-1.fna&oh=00_AfC8fTCvWOtQBbzHCmg78C1dijrh7WA74KcikuNBeN1eTg&oe=6595F6D5'},
+            {name: 'Banana', url: 'https://scontent.fpso2-1.fna.fbcdn.net/v/t39.30808-6/309813280_445602364340300_8499148109070249908_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=783fdb&_nc_eui2=AeFQOnoquU917QeZ9V3Oisq2pEm0fJfPWGmkSbR8l89YaXbnt1AZ8dzWm4-mQySyLVGqvdnhR_BUrrtT6ZsOY948&_nc_ohc=nC69ygXLdCwAX9iQlOH&_nc_ht=scontent.fpso2-1.fna&oh=00_AfBO0neQ6aJh4a-ZKxZET49TwffdVtq1UbQJymucDazMRw&oe=6572D243'},
+            {name: 'Manzana', url: 'https://thumbs.dreamstime.com/z/ilustraci%C3%B3n-de-meme-internet-troll-sobre-manzana-verde-vectorial-ilustrado-como-una-caricatura-memes-aislado-fondo-blanco-197427496.jpg?w=576'},
+            
+           
+        ],
+        removedFoods: [],
+      };
+    },
+    methods: {
+      removeFood(index) {
+        this.removedFoods.push(this.manyFoods.splice(index, 1)[0]);
+      },
+      recoverFood(index) {
+        this.manyFoods.push(this.removedFoods.splice(index, 1)[0]);
+      },
+    },
+  });
+        
+   app.mount('#app')
+  </script>
+  
+
+</body>
+</html>
