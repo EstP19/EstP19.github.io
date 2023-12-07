@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>template </title>
+  <style>
+    #app {
+      display: inline-block;
+      padding: 10px;
+      font-size: x-large;
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+
+<h1>'template'</h1>
+
+<p>hola</p>
+
+<div id="app"></div>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<script>
+  const app = Vue.createApp({
+    template: 
+    `<h1>{{ message }}</h1>
+    <p>romer es alto maricon, quemenlo</p>`,
+    data() {
+      return {
+      message: "Hola mundo"
+      }
+    }
+  })
+  
+  app.mount('#app')
+
+</script>
+
+</body>
+</html>
